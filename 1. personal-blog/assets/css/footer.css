@@ -1,0 +1,23 @@
+footer > ul {
+    list-style-type: none;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+footer .social {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 1px 1px;
+    grid-template-areas: ". . . .";
+    align-items: center;
+}
+footer .social li {
+    margin-right: 10px;
+}
+footer .social a {
+    font-size: 26px;
+    text-decoration: none;
+}

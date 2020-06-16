@@ -1,0 +1,62 @@
+main .container {
+    display: flex;
+    height: 80vh;
+}
+main .container > .user-input {
+    flex-grow: 1;
+    flex-basis: 0;
+    border: 1px solid red;
+    padding: 2%;
+}
+main .container > .user-input > .input-container * {
+    width: 100%;
+    padding: 3px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+main .container > .user-input > .input-container input {
+    height: 40px;
+    border: 1px solid green;
+}
+main .container > .user-input > .input-container input.fail {
+    border: 1px solid red;
+}
+main .container > .user-input > .input-container textarea {
+    height: 100px;
+}
+main .container > .user-input > .input-container textarea.fail {
+    border: 1px solid red;
+}
+main .container > .user-input > .input-container button {
+    height: 40px;
+    background: green;
+    color: white;
+}
+main .container > .user-input > .input-container button:disabled {
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: #666666;
+    cursor: not-allowed;
+}
+main .container > .records {
+    flex-grow: 1;
+    flex-basis: 0;
+    border: 1px solid blue;
+    padding: 2%;
+    overflow: hidden;
+}
+main .container > .records > div.scrollable {
+    overflow: scroll;
+    height: 90%;
+}
+main .container > .records > div .record {
+    padding: 15px 10px;
+    border: 1px solid #333;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+main .container > .records > div .record > .date,
+main .container > .records > div .record .temp,
+main .container > .records > div .record .emotion {
+    padding-bottom: 15px;
+}

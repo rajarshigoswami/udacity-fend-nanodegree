@@ -1,0 +1,6 @@
+article h3 {
+    text-align: center;
+}
+main > section > div article {
+    flex: unset;
+}

@@ -1,0 +1,68 @@
+main {
+    .container {
+        display: flex;
+        height: 80vh;
+        > .user-input {
+            flex-grow: 1;
+            flex-basis: 0;
+            border: 1px solid red;
+            padding: 2%;
+            > .input-container {
+                * {
+                    width: 100%;
+                    padding: 3px;
+                    margin-bottom: 10px;
+                    border-radius: 8px;
+                }
+                input {
+                    height: 40px;
+                    border: 1px solid green;
+                }
+                input.fail {
+                    border: 1px solid red;
+                }
+                textarea {
+                    height: 100px;
+                }
+                textarea.fail {
+                    border: 1px solid red;
+                }
+                button {
+                    height: 40px;
+                    background: green;
+                    color: white;
+                    &:disabled {
+                        border: 1px solid #999999;
+                        background-color: #cccccc;
+                        color: #666666;
+                        cursor: not-allowed;
+                    }
+                }
+            }
+        }
+        > .records {
+            flex-grow: 1;
+            flex-basis: 0;
+            border: 1px solid blue;
+            padding: 2%;
+            overflow: hidden;
+            > div.scrollable {
+                overflow: scroll;
+                height: 90%;
+            }
+            > div {
+                .record {
+                    padding: 15px 10px;
+                    border: 1px solid #333;
+                    border-radius: 8px;
+                    margin-bottom: 10px;
+                    > .date,
+                    .temp,
+                    .emotion {
+                        padding-bottom: 15px;
+                    }
+                }
+            }
+        }
+    }
+}

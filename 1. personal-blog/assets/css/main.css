@@ -1,0 +1,27 @@
+main {
+    padding: 20px;
+    margin-top: 30px;
+}
+main > header > h1 {
+    text-align: center;
+}
+
+main > section > h2 {
+    text-align: center;
+}
+
+main > section > div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main > section > div article {
+    flex: 1 400px;
+}
+
+main > section > div article > img {
+    max-width: 100%;
+}
+img {
+    max-width: 100%;
+}

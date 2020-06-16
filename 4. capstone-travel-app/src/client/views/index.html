@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Trip Planner</title>
+        <link
+            href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Ranga:400,700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+
+    <body>
+        <div class="container">
+            <header>
+                <h1>Travel Planner App</h1>
+            </header>
+            <main>
+                <section id="user-input">
+                    <div class="row">
+                        <div class="col-md-12 mb-3">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1">City Name</span>
+                                </div>
+                                <input
+                                    type="text"
+                                    name="city"
+                                    id="city-name"
+                                    class="form-control"
+                                    placeholder="City Name"
+                                    aria-label="City NAme"
+                                    aria-describedby="basic-addon1"
+                                />
+                            </div>
+                        </div>
+                        <div class="col-md-12 mb-3">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="trip-start-date">Trip Start date</span>
+                                </div>
+                                <input
+                                    name="start-date"
+                                    type="date"
+                                    id="start-date"
+                                    class="form-control"
+                                    placeholder="Trip Start Date"
+                                    aria-label="Trip Start Date"
+                                    aria-describedby="trip-start-date"
+                                />
+                            </div>
+                        </div>
+                        <div class="col-md-12 mb-3">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="trip-end-date">Trip End date</span>
+                                </div>
+                                <input
+                                    name="end-date"
+                                    type="date"
+                                    id="end-date"
+                                    class="form-control"
+                                    placeholder="Trip End Date"
+                                    aria-label="Trip End Date"
+                                    aria-describedby="trip-end-date"
+                                />
+                            </div>
+                        </div>
+                        <div class="col-md-12 row justify-content-center">
+                            <button id="trip-info" class="col-md-6 btn btn-primary">Get Trip Info</button>
+                        </div>
+                    </div>
+                </section>
+                <section class="alert-section" style="display: none;">
+                    <div class="alert alert-danger" role="alert">
+                        Unable to connect with server. Please try again later
+                    </div>
+                </section>
+                <section class="details-section"></section>
+            </main>
+            <footer></footer>
+        </div>
+    </body>
+</html>
